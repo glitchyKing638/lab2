@@ -168,7 +168,7 @@ class MusicEntityDialog(simpledialog.Dialog):
             
         return True
     
-    def apply(self):
+    def dapply(self):
         entity_type = self.entity_type.get()
         name = self.controls["name"].get().strip()
         exec_artist = self.controls["exec"].get().strip()
@@ -346,4 +346,5 @@ def main():
     root.mainloop()
 
 if __name__ == "__main__":
+
     main()
